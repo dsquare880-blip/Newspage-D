@@ -1,0 +1,869 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>News Daddy</title>
+
+    <!-- font awesome cdn -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    />
+
+    <!-- remixicons -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+
+    <!-- custom css -->
+    <link rel="stylesheet" href="assets/style.css" />
+    <link rel="stylesheet" href="assets/media-queries.css" />
+  </head>
+  <body>
+    <!-- ======================== HEADER ========================-->
+
+    <header class="site-header">
+      <div class="brand">
+        <span class="logo"
+          ><img src="assets/images/logo-new.png" alt=""
+        /></span>
+
+        <a href="index.html" class="brand-name">
+          <h2>
+            <span class="letter-1">N</span>ews&nbsp;<span class="letter-1"
+              >D</span
+            >addy
+          </h2>
+        </a>
+      </div>
+
+      <nav class="main-nav slider-container" id="sliderContainer">
+        <div class="slider" id="slider">
+          <button class="tab active"><a href="index.html">All</a></button>
+          <button class="tab "><a href="#">News</a></button>
+          <button class="tab"><a href="#">Articles</a></button>
+          <button class="tab"><a href="#">Sports</a></button>
+          <button class="tab"><a href="#">Tech</a></button>
+          <button class="tab"><a href="single.html">Documentries</a></button>
+          <button class="tab"><a href="#">Movies</a></button>
+        </div>
+      </nav>
+
+      <div class="actions">
+        <i id="themeToggle">AS</i>
+        <a href="https://www.google.com">
+          <button class="btn stn">
+            <i class="ri-search-2-line" aria-hidden="true"></i
+            ><small>search</small>
+          </button>
+        </a>
+
+        <li class="actions-li">
+          <!-- <button class="btn stn ptn"><span>A</span></button> -->
+          <button class="btn stn ctn">
+            <i class="ri-user-6-line" aria-hidden="true"></i>
+          </button>
+
+          <ul class="set-up">
+            <div>
+              <li>
+                <a href="#"><i class="ri-user-2-line"></i> Sign Up</a>
+              </li>
+              <li>
+                <a href="#"><i class="ri-shield-keyhole-line"></i> Log In</a>
+              </li>
+              <li>
+                <a href="#"><i class="ri-dashboard-line"></i> Dashboard</a>
+              </li>
+              <li>
+                <a href="#"><i class="ri-key-2-line"></i> Log Out</a>
+              </li>
+            </div>
+          </ul>
+        </li>
+      </div>
+    </header>
+
+    <!-- ======================== MAIN ========================== -->
+
+    <main class="mn-page">
+      <!-- Aside -->
+      <aside class="mn-aside">
+        <div class="aside-pngs">
+          <img src="assets/aside-imgs/blue_explosion.png" class="img-blue" />
+          <img src="assets/aside-imgs/parrot.png" class="img-parrot" />
+          <img src="assets/aside-imgs/green_leaves.png" class="img-leaf" />
+          <img src="assets/aside-imgs/world.png" class="img-world" />
+          <img src="assets/aside-imgs/kente.jpeg" class="img-kente" />
+          <img src="assets/aside-imgs/image_mn_logo.png" class="img-logo" />
+          <h3>News<br /><span>Daddy</span></h3>
+          <img src="assets/aside-imgs/road.png" class="img-road" />
+          <img src="assets/aside-imgs/red_tree.png" class="img-tree" />
+          <img src="assets/aside-imgs/coconut.png" class="img-coconut" />
+        </div>
+
+        <div class="mn-links">
+          <div class="links">
+            <div class="top-links">
+              <ul>
+                <li>
+                  <a href="index.html" 
+                    ><button class="i-bg"><i class="ri-home-4-line"></i></button
+                    >&nbsp;<span class="nm-span">Home</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="posts.html" 
+                    ><button class="i-bg">
+                      <i class="ri-article-line"></i></button
+                    ><span class="nm-span">&nbsp;Posts</span></a
+                  >
+                </li>
+                <li>
+                  <a href="videos.html"
+                    ><button class="i-bg">
+                      <i class="ri-youtube-line"></i></button
+                    ><span class="nm-span">&nbsp;Videos</span></a
+                  >
+                </li>
+                <li>
+                  <a href="categories.html" class="active"
+                    ><button class="i-bg"><i class="ri-grid-fill"></i></button
+                    ><span class="nm-span">&nbsp;Categories</span></a
+                  >
+                </li>
+              </ul>
+            </div>
+
+            <div class="bottom-links">
+              <ul>
+                <li>
+                  <a href="#"
+                    ><button class="i-bg"><i class="ri-share-fill"></i></button
+                  ></a>
+                </li>
+                <li>
+                  <a href="about.html"
+                    ><button class="i-bg">
+                      <i class="ri-at-fill"></i></button
+                    ><span class="nm-span">&nbsp;AboutUs</span></a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </aside>
+      
+       <nav class="main-nav slider-container mobile" id="sliderContainer">
+              <div class="slider" id="slider">
+                <button class="tab active"><a href="index.html">All</a></button>
+                <button class="tab "><a href="#">News</a></button>
+                <button class="tab"><a href="#">Articles</a></button>
+                <button class="tab"><a href="#">Sports</a></button>
+                <button class="tab"><a href="#">Tech</a></button>
+                <button class="tab"><a href="single.html">Documentries</a></button>
+                <button class="tab"><a href="#">Movies</a></button>
+              </div>
+            </nav>
+      
+      
+      <!-- bottom Nav -->
+    <section class="mn-nav">
+    <div class="bottom-nav" id="bottomNav">
+      <a href="index.html">
+        <button id="linkSub1"class="dis-links"><i class="fa fa-home ic"></i><h4 class="h">Home</h4></button>
+      </a>
+
+      <a href="posts.html">
+        <button id="linkSub2" class="dis-links"><i class="fa-regular fa-newspaper ic"></i><h4 class="h">Posts</h4></button>
+      </a>
+
+      <a href="videos.html">
+        <button id="linkSub3" class="dis-links"><i class="fa-solid fa-video ic"></i><h4 class="h">Videos</h4></button>
+      </a>
+      
+      <input type="checkbox" class="empty-btn hide" hidden checked>
+      <label for="check" class="empty-btn hide">.</label>
+
+      
+      
+      <div class="more-mn">
+          
+          <button class="more-sub active" id="moreSub"><i class="fa-solid fa-list ic"></i><h4 class="h">More</h4></button>
+
+          <ul>
+
+            <a href="categories.html">
+              <button class="active" id="moreSmall1"><i class="fa-solid fa-icons"></i><h4>Categories</h4></button>
+            </a>
+            <a href="#">
+              <button id="moreSmall2"><i class="fa-solid fa-share-nodes"></i><h4>Share</h4></button>
+            </a>
+            <a href="About.html">
+              <button id="moreSmall3"><i class="ri-at-fill"></i><h4>AboutUs</h4></button>
+            </a>
+
+          </ul>
+
+
+      </div>
+    </div>
+      
+      </section>
+      
+
+      <!-- Main Section -->
+      <section class="mn-sect">
+        <!-- trending posts carousel -->
+
+        <div class="trending-carousel">
+          <h1 class="section-title">Categories</h1>
+
+          <div class="carousel-container">
+            <div class="carousel-track">
+
+              <div class="carousel-item">
+                <div class="carousel-image">
+                  <div class="carousel-image-cont">
+                    <a href="#">
+                      <img src="assets/images/img4.jpg" alt="img-unavailable" />
+                    </a>
+                  </div>
+                </div>
+
+                <div class="carousel-info">
+                  <a href="#" class="btn carousel-ctn">Politics</a>
+
+                  <h2 class="carousel-title">
+                    HOW TO ACTUALLY MAKE IT IN LIFE, REGARDLESS
+                  </h2>
+                  <p class="carousel-desc">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Placeat, a! Necessitatibus iure nam assumenda natus cumque
+                    nihil libero quo qui aut dolor dolore amet unde dicta
+                    architecto odit, quod saepe omnis eveniet iusto...
+                  </p>
+
+                  <div class="carousel-meta">
+                    <div class="user-info">
+                      <span class="pro-span">
+                        <!-- <h3>A</h3> -->
+                        <img src="assets/images/img3.jpg" alt="profile-img" />
+                      </span>
+                      <h3 class="nickname">Nickname</h3>
+                    </div>
+
+                    <span class="post-date">Dec 19, 2025 • 08:30 AM</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="carousel-item">
+                <div class="carousel-image">
+                  <div class="carousel-image-cont">
+                    <a href="#">
+                      <img src="assets/images/img3.jpg" alt="img-unavailable" />
+                    </a>
+                  </div>
+                </div>
+
+                <div class="carousel-info">
+                  <a href="#" class="btn carousel-ctn">Politics</a>
+
+                  <h2 class="carousel-title">
+                    HOW TO ACTUALLY MAKE IT IN LIFE...
+                  </h2>
+                  <p class="carousel-desc">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Placeat, a! Necessitatibus iure nam assumenda natus cumque
+                    nihil libero quo qui aut dolor dolore amet unde dicta
+                    architecto odit, quod saepe omnis eveniet iusto...
+                  </p>
+
+                  <div class="carousel-meta">
+                    <div class="user-info">
+                      <span class="pro-span">
+                        <h3>A</h3>
+                        <!-- <img src="assets/images/img3.jpg" alt="profile-img"> -->
+                      </span>
+                      <h3 class="nickname">Nickname</h3>
+                    </div>
+
+                    <span class="post-date">Dec 19, 2025 • 08:30 AM</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="carousel-item">
+                <div class="carousel-image">
+                  <div class="carousel-image-cont">
+                    <a href="#">
+                      <img src="assets/images/imggg.jpg" alt="img-unavailable" />
+                    </a>
+                  </div>
+                </div>
+
+                <div class="carousel-info">
+                  <a href="#" class="btn carousel-ctn">Politics</a>
+
+                  <h2 class="carousel-title">
+                    IN LIFE, THINGS DON'T ALWAYS GO AS EXPECTED
+                  </h2>
+                  <p class="carousel-desc">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Placeat, a! Necessitatibus iure nam assumenda natus cumque
+                    nihil libero quo qui aut dolor dolore amet unde dicta
+                    architecto odit, quod saepe omnis eveniet iusto...
+                  </p>
+
+                  <div class="carousel-meta">
+                    <div class="user-info">
+                      <span class="pro-span">
+                        <!-- <h3>A</h3> -->
+                        <img
+                          src="assets/images/file-841827-242280.jpg"
+                          alt="profile-img"
+                        />
+                      </span>
+                      <h3 class="nickname">Nickname</h3>
+                    </div>
+
+                    <span class="post-date">Dec 19, 2025 • 08:30 AM</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="carousel-item">
+                <div class="carousel-image">
+                  <div class="carousel-image-cont">
+                    <a href="#">
+                      <img
+                        src="assets/images/file-841827-518421.jpg"
+                        alt="img-unavailable"
+                      />
+                    </a>
+                  </div>
+                </div>
+
+                <div class="carousel-info">
+                  <a href="#" class="btn carousel-ctn">Politics</a>
+
+                  <h2 class="carousel-title">
+                    IF YOU FAIL TO PLAN, YOU WILL PLAN TO FAIL
+                  </h2>
+                  <p class="carousel-desc">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Placeat, a! Necessitatibus iure nam assumenda natus cumque
+                    nihil libero quo qui aut dolor dolore amet unde dicta
+                    architecto odit, quod saepe omnis eveniet iusto...
+                  </p>
+
+                  <div class="carousel-meta">
+                    <div class="user-info">
+                      <span class="pro-span">
+                        <!-- <h3>A</h3> -->
+                        <img
+                          src="assets/images/file-841827-821149 (1).jpg"
+                          alt="profile-img"
+                        />
+                      </span>
+                      <h3 class="nickname">Nickname</h3>
+                    </div>
+
+                    <span class="post-date">Dec 19, 2025 • 08:30 AM</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="carousel-item">
+                <div class="carousel-image">
+                  <div class="carousel-image-cont">
+                    <a href="#">
+                      <img
+                        src="assets/images/file-841827-424438.jpg"
+                        alt="img-unavailable"
+                      />
+                    </a>
+                  </div>
+                </div>
+
+                <div class="carousel-info">
+                  <a href="#" class="btn carousel-ctn">Politics</a>
+
+                  <h2 class="carousel-title">
+                    IF YOU LEAD IN A RACE AND YOU DON'T CROSS THE FINISH LINE,
+                    YOU ARE A...
+                  </h2>
+                  <p class="carousel-desc">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Placeat, a! Necessitatibus iure nam assumenda natus cumque
+                    nihil libero quo qui aut dolor dolore amet unde dicta
+                    architecto odit, quod saepe omnis eveniet iusto...
+                  </p>
+
+                  <div class="carousel-meta">
+                    <div class="user-info">
+                      <span class="pro-span">
+                        <!-- <h3>A</h3> -->
+                        <img src="assets/images/img3.jpg" alt="profile-img" />
+                      </span>
+                      <h3 class="nickname">Nickname</h3>
+                    </div>
+
+                    <span class="post-date">Dec 19, 2025 • 08:30 AM</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <button class="carousel-btn prev">
+            <i class="fa fa-chevron-left"></i>
+          </button>
+          <button class="carousel-btn next">
+            <i class="fa fa-chevron-right"></i>
+          </button>
+        </div>
+
+        <div class="showcase-bar bar1">
+          <h1 class="section-title recent-vids-title">Recent Videos</h1>
+
+          <div class="recent-vids-cont">
+            <div class="mini-cont A">
+              <a href="#">
+                <img
+                  src="assets/images/file-841827-469239 (1).jpg"
+                  alt="recent video image"
+                />
+              </a>
+
+            <div class="overlay-show">
+              <a href="#">
+                <h4>
+                  Hello, so this is what they are saying is the title...
+                </h4>
+              </a>
+            </div>
+
+            </div>
+
+            <div class="mini-cont A">
+              <a href="#">
+                <img src="assets/images/thumb.jpg" alt="recent video image" />
+              </a>
+
+              <div class="overlay-show">
+                <a href="#">
+                  <h4>
+                    No Way They Tried AGAIN...
+                  </h4>
+                </a>
+              </div>
+
+            </div>
+
+            <div class="mini-cont A">
+              <a href="#">
+                <img
+                  src="assets/images/file-841827-586529.jpg"
+                  alt="recent video image"
+                />
+              </a>
+
+              <div class="overlay-show">
+                <a href="#"
+                  ><h4>
+                    Hello, so this is what they are saying is the title...
+                  </h4>
+                </a>
+              </div>
+
+            </div>
+
+            <div class="mini-cont tik">
+              <a href="#">
+                <img
+                  src="assets/images/tiktok_thumbnail.jpg"
+                  alt="recent video image"
+                />
+              </a>
+            </div>
+
+            <div class="mini-cont vlinks">
+              <div class="youtube">
+                <a href="#">
+                  <p><button class="youtube"><i class="ri-youtube-fill"></i></button>&nbsp;<span>Youtube</span></p>
+                </a>
+              </div>
+
+              <div class="tiktok">
+                <a href="#">
+                  <p><span class="tk">Tiktok</span>&nbsp;<button class="tiktok"><i class="ri-tiktok-fill tiktok"></i></button></p>
+                </a>
+              </div>
+
+              <div class="see-more">
+                <a href="#">
+                  <p>see more&nbsp;→</p>
+                </a>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+        <div class="showcase-bar bar2">
+          <h1 class="section-title recent-vids-title">Recent Videos</h1>
+        
+          <div class="recent-vids-cont">
+            <div class="mini-cont A">
+              <a href="#">
+                <img src="assets/images/file-841827-469239 (1).jpg" alt="recent video image" />
+              </a>
+        
+              <div class="overlay-show">
+                <a href="#">
+                  <h4>
+                    Hello, so this is what they are saying is the title...
+                  </h4>
+                </a>
+              </div>
+        
+            </div>
+        
+            <div class="mini-cont A">
+              <a href="#">
+                <img src="assets/images/thumb.jpg" alt="recent video image" />
+              </a>
+        
+              <div class="overlay-show">
+                <a href="#">
+                  <h4>
+                    No Way They Tried AGAIN...
+                  </h4>
+                </a>
+              </div>
+        
+            </div>
+        
+            <div class="mini-cont tik">
+              <a href="#">
+                <img src="assets/images/tiktok_thumbnail.jpg" alt="recent video image" />
+              </a>
+            </div>
+        
+            <div class="mini-cont vlinks">
+              <div class="youtube">
+                <a href="#">
+                  <p><button class="youtube"><i class="ri-youtube-fill"></i></button>&nbsp;<span>Youtube</span></p>
+                </a>
+              </div>
+        
+              <div class="tiktok">
+                <a href="#">
+                  <p><span class="tk">Tiktok</span>&nbsp;<button class="tiktok"><i class="ri-tiktok-fill tiktok"></i></button>
+                  </p>
+                </a>
+              </div>
+        
+              <div class="see-more">
+                <a href="#">
+                  <p>see more&nbsp;→</p>
+                </a>
+              </div>
+        
+            </div>
+          </div>
+        </div>
+
+
+        <hr>
+    
+   
+        <!-- ====================== Latest Post Section ==================== -->
+
+        <div class="latest-posts">
+           <h1 class="section-title title-mst">Latest Posts</h1>
+
+           <div class="posts-grid" id="postGrid">
+            
+             <div class="card">
+
+               <div class="img-box">
+                  <a href="#"><img src="assets/images/file-841827-976089.jpg" alt="image" class="card-img"></a>
+
+                  <!-- <a href="#">
+                    <div class="card-img placeholder"><h3><span>📸</span> image not available</h3></div>
+                  </a> -->
+               </div>
+
+               <div class="card-body">
+                 <h2 class="card-title"><a href="#">ISHOWSPEED GOING PRO WITH TOM BRADY ON SATURDAY 15, 2025</a></h2>
+
+                 <P class="card-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam debitis neque officiis ipsa veritatis corporis at quos quo! Deserunt...  
+                 </P>
+
+                 <div class="card-bottom">
+
+                  <div class="card-user-info">
+                      <button class="btn stn ctn cu-info-btn">
+                        <img src="assets/images/file-841827-130697.jpg" alt="">
+                      </button>
+                      <!-- <button class="btn stn ptn cu-info-btn"><span>A</span></button> -->
+
+                    <div class="name-date">
+                      <h4>Chris</h4>
+                      <p>Oct 20, 2025</p>
+                    </div>
+
+                  </div>
+
+                   
+                  <div class="btn ct-btn">
+                    <p><a href="#">News</a></p>
+                  </div>
+
+                  </div>
+
+                </div>
+             </div>
+
+              <div class="card">
+              
+                <div class="img-box">
+                  <a href="#"><img src="assets/images/file-841827-424438.jpg" alt="image" class="card-img"></a>
+                  <a href="#">
+                    <div class="card-img placeholder"></div>
+                  </a>
+                </div>
+              
+                <div class="card-body">
+                  <h2 class="card-title"><a href="#">ISHOWSPEED GOING PRO WITH TOM BRADY ON SATURDAY 15, 2025</a></h2>
+              
+                  <P class="card-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam debitis neque officiis ipsa veritatis corporis at quos quo!
+                  Deserunt...
+                  </P>
+              
+                  <div class="card-bottom">
+              
+                    <div class="card-user-info">
+                      <!-- <button class="btn stn ctn cu-info-btn">
+                        <img src="assets/images/file-841827-130697.jpg" alt="">
+                      </button> -->
+                      <button class="btn stn ptn cu-info-btn"><span>A</span></button>
+              
+                      <div class="name-date">
+                        <h4>Willis Beat</h4>
+                        <p>Oct 20, 2025</p>
+                      </div>
+              
+                    </div>
+              
+              
+                    <div class="btn ct-btn">
+                      <p><a href="#">Articles</a></p>
+                    </div>
+              
+                  </div>
+              
+                </div>
+              </div>
+
+              <div class="card">
+              
+                <div class="img-box">
+                  <a href="#"><img src="assets/images/file-841827-469239 (1).jpg" alt="image" class="card-img"></a>
+                  <a href="#">
+                    <div class="card-img placeholder"></div>
+                  </a>
+                </div>
+              
+                <div class="card-body">
+                  <h2 class="card-title"><a href="#">ISHOWSPEED GOING PRO WITH TOM BRADY ON SATURDAY 15, 2025</a></h2>
+              
+                  <P class="card-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam debitis neque officiis ipsa veritatis corporis at quos quo!
+                  Deserunt...
+                  </P>
+              
+                  <div class="card-bottom">
+              
+                    <div class="card-user-info">
+                      <!-- <button class="btn stn ctn cu-info-btn">
+                        <img src="assets/images/file-841827-130697.jpg" alt="">
+                      </button> -->
+                      <button class="btn stn ptn cu-info-btn"><span>A</span></button>
+              
+                      <div class="name-date">
+                        <h4>Kesse Ofori</h4>
+                        <p>Oct 20, 2025</p>
+                      </div>
+              
+                    </div>
+              
+              
+                    <div class="btn ct-btn">
+                      <p><a href="#">Tech</a></p>
+                    </div>
+              
+                  </div>
+              
+                </div>
+              </div>
+
+              <div class="card">
+              
+                <div class="img-box">
+                  <a href="#"><img src="assets/images/thumb.jpg" alt="image" class="card-img"></a>
+
+                  <a href="#">
+                    <div class="card-img placeholder"></div>
+                  </a>
+                </div>
+              
+                <div class="card-body">
+                  <h2 class="card-title"><a href="#">ISHOWSPEED GOING PRO WITH TOM BRADY ON SATURDAY 15, 2025.</a></h2>
+              
+                  <P class="card-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam debitis neque officiis ipsa veritatis corporis at quos quo!
+                  Deserunt...
+                  </P>
+              
+                  <div class="card-bottom">
+              
+                    <div class="card-user-info">
+                      <button class="btn stn ctn cu-info-btn">
+                        <img src="assets/images/file-841827-424438.jpg" alt="">
+                      </button>
+                      <!-- <button class="btn stn ptn"><span>A</span></button> -->
+              
+                      <div class="name-date">
+                        <h4>Dylan Page</h4>
+                        <p>Oct 20, 2025</p>
+                      </div>
+              
+                    </div>
+              
+              
+                    <div class="btn ct-btn">
+                      <p><a href="#">Sports</a></p>
+                    </div>
+              
+                  </div>
+              
+                </div>
+              </div>
+
+              <div class="card">
+              
+                <div class="img-box">
+                  <a href="#"><img src="assets/images/img3.jpg" alt="image" class="card-img"></a>
+
+                  <a href="#">
+                    <div class="card-img placeholder"></div>
+                  </a>
+                </div>
+              
+                <div class="card-body">
+                  <h2 class="card-title"><a href="#">ISHOWSPEED GOING PRO WITH TOM BRADY ON SATURDAY 15, 2025.</a></h2>
+              
+                  <P class="card-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam debitis neque officiis ipsa veritatis corporis at quos quo!
+                  Deserunt...
+                  </P>
+              
+                  <div class="card-bottom">
+              
+                    <div class="card-user-info">
+                      <button class="btn stn ctn cu-info-btn">
+                        <img src="assets/images/file-841827-424438.jpg" alt="">
+                      </button>
+                      <!-- <button class="btn stn ptn"><span>A</span></button> -->
+              
+                      <div class="name-date">
+                        <h4>Dylan Page</h4>
+                        <p>Oct 20, 2025</p>
+                      </div>
+              
+                    </div>
+              
+              
+                    <div class="btn ct-btn">
+                      <p><a href="#">Sports</a></p>
+                    </div>
+              
+                  </div>
+              
+                </div>
+              </div>
+
+              <div class="card">
+              
+                <div class="img-box">
+                  <a href="#"><img src="assets/images/file-841827-531994.jpg" alt="image" class="card-img"></a>
+
+                  <a href="#">
+                    <div class="card-img placeholder"></div>
+                  </a>
+                </div>
+              
+                <div class="card-body">
+                  <h2 class="card-title"><a href="#">ISHOWSPEED GOING PRO WITH TOM BRADY ON SATURDAY 15, 2025</a></h2>
+              
+                  <P class="card-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam debitis neque officiis ipsa veritatis corporis at quos quo!
+                  Deserunt...
+                  </P>
+              
+                  <div class="card-bottom">
+              
+                    <div class="card-user-info">
+                      <!-- <button class="btn stn ctn cu-info-btn">
+                        <img src="assets/images/file-841827-130697.jpg" alt="">
+                      </button> -->
+                      <button class="btn stn ptn cu-info-btn"><span>B</span></button>
+
+              
+                      <div class="name-date">
+                        <h4>Nickname</h4>
+                        <p>Oct 20, 2025</p>
+                      </div>
+              
+                    </div>
+              
+              
+                    <div class="btn ct-btn">
+                      <p><a href="#">News</a></p>
+                    </div>
+              
+                  </div>
+              
+                </div>
+              </div>
+
+           </div>
+            
+
+           
+
+        </div>
+
+        <div class="more">
+          <button class="btn carousel-ctn more-btn"><a href="#">more <span class="moving">≫</span></a></button>
+        </div>
+
+        <hr>
+
+
+      </section>
+
+    </main>
+
+    <!-- =========================== FOOTER ===========================-->
+
+    <!-- JavaScript -->
+    
+    <script src="script.js" defer></script>
+
+    
+  </body>
+</htm

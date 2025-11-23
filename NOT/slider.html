@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Link Slider</title>
+  <style>
+    /* ===== RESET ===== */
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: "Poppins", sans-serif;
+      background: #f8f9fa;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    /* ===== SLIDER CONTAINER ===== */
+    .slider-container {
+      position: relative;
+      display: flex;
+      align-items: center;
+      overflow: hidden;
+      background: #fff;
+      padding: 10px 20px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+      border-radius: 14px;
+      width: 90%;
+      max-width: 800px;
+      opacity: 0;
+      transform: translateY(-20px);
+      animation: slideIn 0.6s ease forwards;
+    }
+
+    @keyframes slideIn {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    /* ===== SLIDER ===== */
+    .slider {
+      display: flex;
+      gap: 10px;
+      overflow-x: auto;
+      scroll-behavior: smooth;
+      scrollbar-width: none; /* Firefox */
+    }
+
+    .slider::-webkit-scrollbar {
+      display: none; /* Chrome, Safari */
+    }
+
+    /* ===== SLIDER ITEMS ===== */
+    .slider-item {
+      flex: 0 0 auto;
+      text-decoration: none;
+      padding: 10px 20px;
+      background: #f0f0f0;
+      border-radius: 20px;
+      color: #333;
+      transition: all 0.3s ease;
+      font-weight: 500;
+      white-space: nowrap;
+    }
+
+    .slider-item:hover {
+      background: #ddd;
+    }
+
+    .slider-item.active {
+      background: #007bff;
+      color: #fff;
+      transform: scale(1.05);
+    }
+
+    /* ===== NAV BUTTONS ===== */
+    .slider-btn {
+      background: #007bff;
+      border: none;
+      font-size: 20px;
+      cursor: pointer;
+      padding: 8px 12px;
+      color: #fff;
+      border-radius: 50%;
+      transition: all 0.3s ease;
+      z-index: 10;
+      opacity: 1;
+      pointer-events: auto;
+    }
+
+    .slider-btn:hover {
+      background: #0056b3;
+      transform: scale(1.1);
+    }
+
+    .slider-btn.hidden {
+      opacity: 0;
+      pointer-events: none;
+    }
+
+    .slider-btn.prev {
+      margin-right: 10px;
+    }
+
+    .slider-btn.next {
+      margin-left: 10px;
+    }
+  </style>
+</head>
+<body>
+  <!-- ===== SLIDER SECTION ===== -->
+  <nav class="slider-container">
+    <button class="slider-btn prev">&#10094;</button>
+    <div class="slider" id="slider">
+      <a href="slider.html" class="slider-item active">Home</a>
+      <a href="tech.html" class="slider-item">Technology</a>
+      <a href="#" class="slider-item">Lifestyle</a>
+      <a href="#" class="slider-item">Travel</a>
+      <a href="#" class="slider-item">Business</a>
+      <a href="#" class="slider-item">Health</a>
+      <a href="#" class="slider-item">Science</a>
+      <a href="#" class="slider-item">Sports</a>
+      <a href="#" class="slider-item">Education</a>
+      <a href="#" class="slider-item">Music</a>
+      <a href="#" class="slider-item">Movies</a>
+      <a href="#" class="slider-item">Finance</a>
+    </div>
+    <button class="slider-btn next">&#10095;</button>
+  </nav>
+
+  <script>
+    const slider = document.getElementById('slider');
+    const prev = document.querySelector('.prev');
+    const next = document.querySelector('.next');
+    const items = document.querySelectorAll('.slider-item');
+
+    // Scroll on button click
+    next.addEventListener('click', () => {
+      slider.scrollBy({ left: 200, behavior: 'smooth' });
+    });
+
+    prev.addEventListener('click', () => {
+      slider.scrollBy({ left: -200, behavior: 'smooth' });
+    });
+
+    // Set active link on click
+    items.forEach(item => {
+      item.addEventListener('click', () => {
+        document.querySelector('.slider-item.active')?.classList.remove('active');
+        item.classList.add('active');
+      });
+    });
+
+    // Handle button fade visibility
+    const updateButtonVisibility = () => {
+      const scrollLeft = slider.scrollLeft;
+      const maxScroll = slider.scrollWidth - slider.clientWidth;
+
+      // Fade out prev button at start
+      if (scrollLeft <= 5) {
+        prev.classList.add('hidden');
+      } else {
+        prev.classList.remove('hidden');
+      }
+
+      // Fade out next button at end
+      if (scrollLeft >= maxScroll - 5) {
+        next.classList.add('hidden');
+      } else {
+        next.classList.remove('hidden');
+      }
+    };
+
+    // Listen for scroll
+    slider.addEventListener('scroll', updateButtonVisibility);
+    window.addEventListener('resize', updateButtonVisibility);
+
+    // Initialize visibility on load
+    updateButtonVisibility();
+  </script>
+</body>
+</html>

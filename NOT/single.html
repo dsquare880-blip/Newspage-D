@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News Daddy</title>
+
+    <!-- font awesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" />
+
+
+    <!-- remixicons -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+
+
+
+    <!-- custom css -->
+    <link rel="stylesheet" href="assets/style.css">
+    <link rel="stylesheet" href="assets/media-queries.css">
+</head>
+<body>
+    
+<!-- HEADER -->
+
+    <header class="site-header">
+
+        <div class="brand">
+            <span class="logo"><img src="assets/images/New Project 98 [DB118D8].png" alt=""></span>
+             
+            <a href="single.html" class="brand-name">
+              <h2>
+                <span class="1-letter">N</span>ews&nbsp;<span class="1-letter">D</span>addy
+              </h2>
+            </a>
+
+        </div>
+
+
+        <nav class="main-nav slider-container" id="sliderContainer">
+
+          <div class="slider" id="slider">
+            <button class="tab"><a href="#">News</a></button>
+            <button class="tab"><a href="#">Articles</a></button>
+            <button class="tab"><a href="#">Sports</a></button>
+            <button class="tab"><a href="#">Entertainment</a></button>
+            <button class="tab active"><a href="single.html">Documentries</a></button>
+            <button class="tab"><a href="#">Movies</a></button>
+          </div>
+
+        </nav>
+
+        <div class="actions">
+
+            <button id="themeToggle" class="btn ctn"><i class="ri-moon-line"></i></button>
+            <button class="btn stn"><i class="fa fa-search" aria-hidden="true"></i> Search</button>
+
+            <li class="actions-li">
+                <button class="btn ctn"><i class="ri-user-6-line" aria-hidden="true"></i></button>
+            
+
+                <ul class="set-up">
+                   <li><a href="#">Sign Up</a></li> 
+                   <li><a href="#">Log In</a></li> 
+                   <li><a href="#">Dashboard</a></li> 
+                   <li><a href="#">Log Out</a></li> 
+                </ul>
+            </li>
+        </div>
+    </header>
+
+
+<!-- MAIN -->
+<!-- FOOTER -->
+
+
+<!-- JavaScript -->
+
+ <script>
+    const tabs = document.querySelectorAll(".tab");
+    const container = document.getElementById("sliderContainer");
+
+    tabs.forEach(tab => {
+      tab.addEventListener("click", () => {
+        // Remove active class from current tab
+        document.querySelector(".tab.active").classList.remove("active");
+        // Add active class to clicked tab
+        tab.classList.add("active");
+
+        // 🧠 Scroll logic: ensure clicked tab is visible
+        const tabRect = tab.getBoundingClientRect();
+        const containerRect = container.getBoundingClientRect();
+
+        if (tabRect.left < containerRect.left) {
+          // If the tab is hidden on the left side
+          container.scrollBy({
+            left: tabRect.left - containerRect.left - 10,
+            behavior: "smooth"
+          });
+        } else if (tabRect.right > containerRect.right) {
+          // If the tab is hidden on the right side
+          container.scrollBy({
+            left: tabRect.right - containerRect.right + 10,
+            behavior: "smooth"
+          });
+        }
+      });
+    });
+  </script>
+
+
+
+<script>
+    const toggle = document.getElementById("themeToggle");
+    const body = document.body;
+
+    // --- Function to apply a given theme ---
+    function applyTheme(theme) {
+        if (theme === "dark") {
+            body.classList.add("dark");
+            toggle.innerHTML = '<i class="ri-sun-line"></i>';
+        } else {
+            body.classList.remove("dark");
+            toggle.innerHTML = '<i class="ri-moon-line"></i>';
+        }
+    }
+
+    // --- Get saved theme or auto-detect system preference ---
+    const savedTheme = localStorage.getItem("theme");
+
+    if (savedTheme) {
+        // Use user’s saved preference
+        applyTheme(savedTheme);
+    } else {
+        // Detect system theme if no preference saved
+        const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+        applyTheme(prefersDark ? "dark" : "light");
+    }
+
+    // --- Toggle theme on click ---
+    toggle.addEventListener("click", () => {
+        const newTheme = body.classList.contains("dark") ? "light" : "dark";
+        applyTheme(newTheme);
+        localStorage.setItem("theme", newTheme);
+    });
+</script>
+
+
+</body>
+</html>
